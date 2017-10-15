@@ -46,4 +46,11 @@ var app = {
 
         console.log('Received Event: ' + id);
     }
+	
+	var hideSplashscreen = function() {
+    if (navigator && navigator.splashscreen) {
+      navigator.splashscreen.hide();
+    }
+  };
+  $timeout(hideSplashscreen, 3000);
 };
