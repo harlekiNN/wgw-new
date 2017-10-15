@@ -94,7 +94,9 @@
 	
 
     <!-- Define app splash screen for each platform. -->
+	<preference name="SplashScreen" value="splash" />
 	<splash src="res/screen/android/splash.png" />
+	<preference name="SplashScreenDelay" value="3000" />
 
     <gap:splash src="res/screen/android/screen-ldpi-portrait.png"       gap:platform="android" gap:qualifier="port-ldpi" />
     <gap:splash src="res/screen/android/screen-mdpi-portrait.png"       gap:platform="android" gap:qualifier="port-mdpi" />
@@ -108,7 +110,7 @@
     <gap:splash src="res/screen/ios/screen-ipad-landscape.png"          gap:platform="ios"     width="1024" height="768" />
     <gap:splash src="res/screen/windows-phone/screen-portrait.jpg"      gap:platform="winphone" />
 	
-	<preference name="SplashScreenDelay" value="950000" />
+
 
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
     <string>100</string>
