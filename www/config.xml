@@ -64,7 +64,7 @@
  
     <plugin name="cordova-plugin-vibration" />-->
 	    <plugin name="cordova-plugin-inappbrowser" />
-	   <plugin name="cordova-plugin-splashscreen" />
+	<plugin name="cordova-plugin-splashscreen" spec="~4.0.3" />
 
     <!-- Third party plugins -->
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
@@ -96,7 +96,7 @@
     <!-- Define app splash screen for each platform. -->
 	<preference name="SplashScreen" value="screen" />
 	<splash src="res/screen/android/splash.png" />
-	<preference name="SplashScreenDelay" value="60000" />
+	<preference name="SplashScreenDelay" value="6" />
 
     <splash src="res/screen/android/screen-ldpi-portrait.png"       platform="android" gap:qualifier="port-ldpi" />
     <splash src="res/screen/android/screen-mdpi-portrait.png"       platform="android" gap:qualifier="port-mdpi" />
