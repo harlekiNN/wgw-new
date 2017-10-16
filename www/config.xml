@@ -24,6 +24,7 @@
     <preference name="permissions"                value="none"/>
 
     <!-- Customize your app and platform with the preference element. -->
+	<preference name='phonegap-version' value='cli-6.5.0' />
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
     <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
@@ -34,7 +35,9 @@
     <preference name="detect-data-types"          value="true" />           <!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->
     <preference name="exit-on-suspend"            value="false" />          <!-- ios: if set to true, app will terminate when home button is pressed -->
     <preference name="ShowSplashScreenSpinner" value="false"/>          <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
-    <preference name="autohidesplashscreen"    value="true" />           <!-- ios: if set to false, the splash screen must be hidden using a JavaScript API -->
+    <preference name="SplashScreen" value="screen" />
+	<preference name="SplashScreenDelay" value="600000" />
+	<preference name="autohidesplashscreen"    value="true" />           <!-- ios: if set to false, the splash screen must be hidden using a JavaScript API -->
     <preference name="disable-cursor"             value="auto" />          <!-- blackberry: prevents a mouse-icon/cursor from being displayed on the app -->
     <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
     <!--
@@ -94,14 +97,14 @@
 	
 
     <!-- Define app splash screen for each platform. -->
-	<preference name="SplashScreen" value="screen" />
-	<splash src="res/screen/android/splash.png" />
-	<preference name="SplashScreenDelay" value="600000" />
-
+		<splash src="res/screen/android/splash.png" />
+		
+	<platform name="android"> 
     <splash src="res/screen/android/screen-ldpi-portrait.png"       platform="android" qualifier="port-ldpi" />
     <splash src="res/screen/android/screen-mdpi-portrait.png"       platform="android" qualifier="port-mdpi" />
     <splash src="res/screen/android/screen-hdpi-portrait.png"       platform="android" qualifier="port-hdpi" />
     <splash src="res/screen/android/screen-xhdpi-portrait.png"      platform="android" qualifier="port-xhdpi" />
+	</platform> 
     <splash src="res/screen/blackberry/screen-225.png"              platform="blackberry" />
     <splash src="res/screen/ios/screen-iphone-portrait.png"         platform="ios"     width="320" height="480" />
     <splash src="res/screen/ios/screen-iphone-portrait-2x.png"      platform="ios"     width="640" height="960" />
