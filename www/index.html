@@ -24,8 +24,8 @@
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
-		<!--<meta http-equiv="Cache-control" content="no-cache">
-		<meta http-equiv="Expires" content="-1">-->
+		<meta http-equiv="Cache-control" content="no-cache">
+		<meta http-equiv="Expires" content="-1">
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
@@ -36,6 +36,9 @@
                 document.addEventListener("deviceready", onDeviceReady, false);
 
                 function onDeviceReady() {
+					setTimeout(function() {
+					navigator.splashscreen.hide();
+									}, 2000);
                     var ref = window.open(encodeURI('http://wasgehtwann.de'), '_blank', 'location=no');
                 }
             </script>
