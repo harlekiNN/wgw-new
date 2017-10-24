@@ -16,9 +16,7 @@
         Lukas Hansen
     </author>
 	
-	<style>
-	body{background-color:black;}.
-	</style>
+<preference name="BackgroundColor" value="0xff000000"/>
 
     <!--
         If you do not want any permissions to be added to your app, add the
