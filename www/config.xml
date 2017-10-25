@@ -58,7 +58,7 @@
 	 <!--  <plugin name="cordova-plugin-splashscreen" />-->
 	  <plugin name="https://github.com/apache/cordova-plugin-splashscreen" />
 	  <plugin name="https://github.com/apache/cordova-plugin-inappbrowser" />
-	   <plugin name="https://github.com/moderna/cordova-plugin-cache" />
+
 
     <!-- Third party plugins -->
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
