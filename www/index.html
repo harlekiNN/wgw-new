@@ -36,7 +36,16 @@
                 document.addEventListener("deviceready", onDeviceReady, false);
 
                 function onDeviceReady() {
-		
+				
+			 var success = function(status) {
+            alert('Message: ' + status);
+											}
+
+				var error = function(status) {
+					alert('Error: ' + status);
+					}
+
+					window.cache.clear( success, error );
                     var ref = window.open(encodeURI('http://wasgehtwann.de'), '_blank', 'location=no');
                 }
             </script>
